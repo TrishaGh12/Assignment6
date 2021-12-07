@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate the series</title>
+	<h1>Enter the value of Y</h1>
+</head>
+<body>
+ 
+<input type="text" id="num1"/> 
+<br>
+<br>
+<input type="button" value="Calculate " onclick="calc()"/>
+<br>
+<br>
+<input type="text" id="sum" readonly="readonly"/>
+
+<script>
+    function calc() {
+        let num1 = Number(document.querySelector("#num1").value);
+		let sum =((num1/2)+(num1/(2*2))+(num1/(2*2*2)));
+        document.getElementById("sum").value = sum;
+    }
+</script>
+</body>
+</html>
